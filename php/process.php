@@ -1,7 +1,7 @@
 <?php
 require "functions.php";
 
-if ($_SERVER["REQUEST_METHOD"] == $_POST) {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Collect the data
     $name = htmlspecialchars($_POST["name"]);
     $email = htmlspecialchars($_POST["email"]);
@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == $_POST) {
     // saving the data
     saveData($filePath, $data);
 
-    // Redirect to another page with the result (e.g., display.php)
+    // Redirect to another page with the result
     header("Location: feedbacks.php");
     exit();
 }

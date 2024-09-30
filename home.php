@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 <html>
     <head>
@@ -16,14 +14,14 @@
             <input required type="email" name="email" id="email" />
             <label for="feedback-type">Select your feedback type: </label>
             <select id="feedback-type" name="feedback-type">
-                <option vlaue="Query">Query</option>
-                <option vlaue="Feedback">Feedback</option>
-                <option vlaue="Complaint">Complaint</option>
-                <option vlaue="Other">Other</option>
+                <option value="Query">Query</option>
+                <option value="Feedback">Feedback</option>
+                <option value="Complaint">Complaint</option>
+                <option value="Other">Other</option>
             </select>
             <label for="feedback">Enter your Feedback: </label>
             <textarea id="feedback" name="feedback"></textarea>
-            <input type="submit" vlaue="Submit" />
+            <input type="submit" value="Submit" />
         </form>
     </body>
 </html>

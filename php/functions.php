@@ -5,6 +5,12 @@ function saveData($filePath, $dataArray)
     if (file_exists($filePath)) {
         $currentData = file_get_contents($filePath);
         $arrayData = json_decode($currentData, true);
+
+        if ($arrayData === null) {
+            // If json_decode fails, initialize as an empty array
+            $arrayData = [];
+        }
+
         array_push($arrayData, $dataArray);
     } else {
         // create a new array
