@@ -27,4 +27,25 @@ function saveData($filePath, $dataArray)
         echo "<script>console.log(Error saving data.)</script>";
     }
 }
+
+function getData()
+{
+    // Load the JSON file
+    $json = file_get_contents("../json/feedbacks.json");
+
+    // Check if the file was read successfully
+    if ($json === false) {
+        die("Error reading the JSON file");
+    }
+
+    // Decode the JSON file into an associative array
+    $data = json_decode($json, true);
+
+    // Check if the JSON was decoded successfully
+    if ($data === null) {
+        die("Error decoding the JSON file");
+    }
+
+    return $data;
+}
 ?>
