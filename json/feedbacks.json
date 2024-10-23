@@ -4,5 +4,11 @@
         "email": "home@gmail.com",
         "feedback-type": "Query",
         "feedback": "fheo"
+    },
+    {
+        "name": "Tharindu Edirisinghe",
+        "email": "t.dasanthaedirisinghe@gmail.com",
+        "feedback-type": "Feedback",
+        "feedback": "this is a good site"
     }
 ]
